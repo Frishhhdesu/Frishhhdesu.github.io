@@ -1,0 +1,79 @@
+.main-page {
+    border: 4px solid #d8af54;
+    border-radius:25px;
+    width: 700px;
+    height: 985px;
+    margin: 5% auto;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+div>.header {
+    background-color: #001f42;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+div>.header>div {
+    width: 65%;
+}
+
+div>.header>img {
+    height: 120px;
+    width: auto;
+    border-radius: 10px;
+    margin: auto;
+}
+
+div>.header>div>p,h1 {
+    color: #d3e4ed;
+}
+
+.main-page>hr {
+    height: 5px;
+    background-color: #d8af54;
+    border: none;
+    margin-top: 0px;
+}
+
+body {
+    background-color: #d3e4ed;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.marginLeft-7 {
+    margin-left: 7%;
+}
+
+p {
+    font-size: 2vh;
+    color: #000000;
+    margin: 2% 0;
+}
+
+.info {
+    margin-right: 7%;
+    text-align: justify;
+}
+
+.cols {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+td {
+    height: 40px;
+}
+
+.educ { 
+    text-align: left;
+}
+
+.years {
+    width: 150px;
+}
+
+.level {
+    width: 240px;
+}
