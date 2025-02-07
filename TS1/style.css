@@ -3,7 +3,7 @@
     border-radius:25px;
     width: 700px;
     height: 985px;
-    margin: 5% auto;
+    margin: 3% auto;
     overflow: hidden;
     background-color: #fff;
 }
@@ -46,7 +46,7 @@ body {
 }
 
 p {
-    font-size: 2vh;
+    font-size: 2;                    /*change this to font-size px later !!!*/
     color: #000000;
     margin: 2% 0;
 }
@@ -77,3 +77,54 @@ td {
 .level {
     width: 240px;
 }
+
+.dark-mode {
+    background-color: #1b1630;
+}
+.dark-mode .main-page {
+    background-color: #3c3743;
+}
+
+.dark-mode .header {
+    background-color: #9194a5;
+}
+
+.dark-mode .header>div>p, 
+.dark-mode .header>div>h1 {
+    color: #000000;
+}
+.dark-mode p, .dark-mode h1, .dark-mode h3, .dark-mode td, .dark-mode li {
+    color: white;
+}
+
+button {
+    padding: 17px 40px;
+    margin: 3% 0 0 80%;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: rgb(126, 166, 195);
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all 0.5s ease;
+    position: fixed;
+  }
+  
+  button:hover {
+    letter-spacing: 3px;
+    background-color: hsl(207, 74%, 21%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(13, 43, 113) 0px 7px 29px 0px;
+  }
+  
+  button:active {
+    letter-spacing: 3px;
+    background-color: hsl(216, 48%, 21%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(15, 54, 108) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+  }
+  
