@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color of the Day</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="buttons">
+            <br><br><br><br><br>
+            <button class="btn btn1" data-color="rgb(240, 128, 128)">Sunday</button><br>
+            <button class="btn btn2" data-color="rgb(240, 190, 128)">Monday</button><br>
+            <button class="btn btn3" data-color="rgb(240, 231, 128)">Tuesday</button><br>
+            <button class="btn btn4" data-color="rgb(150, 240, 128)">Wednesday</button><br>
+            <button class="btn btn5" data-color="rgb(133, 222, 255)">Thursday</button><br>
+            <button class="btn btn6" data-color="rgb(158, 128, 240)">Friday</button><br>
+            <button class="btn btn7" data-color="rgb(240, 128, 221)">Saturday</button>
+        </div>
+    </div>
+
+    <div class="box"></div>
+    
+    <script>
+        const box = document.querySelector('.box');
+        const buttons = document.querySelectorAll('.btn');
+
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                box.style.transform = 'translateY(-50px)';
+                box.style.opacity = '0';
+
+                setTimeout(() => {
+                    box.style.borderColor = button.dataset.color; 
+                    box.style.transform = 'translateY(50px)'; 
+                    box.style.opacity = '1';
+                }, 600); 
+            });
+        });
+    </script>
+</body>
+</html>

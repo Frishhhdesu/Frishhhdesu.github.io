@@ -1,0 +1,49 @@
+body {
+    background-color: #ededed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    margin: 20px 0px 20px 350px;
+    font-size: 16px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.15);
+    transition: 250ms;
+}
+
+.btn1 { background-color: rgb(240, 128, 128); }
+.btn2 { background-color: rgb(240, 190, 128); }
+.btn3 { background-color: rgb(240, 231, 128); }
+.btn4 { background-color: rgb(150, 240, 128); }
+.btn5 { background-color: rgb(133, 222, 255); }
+.btn6 { background-color: rgb(158, 128, 240); }
+.btn7 { background-color: rgb(240, 128, 221); }
+
+.box {
+    height: 400px;
+    width: 400px;
+    background-color: transparent;
+    border: 10px solid transparent;
+    margin: 20px auto;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: transform 0.3s ease, opacity 0.3s ease, border-color 0.3s ease;
+}
