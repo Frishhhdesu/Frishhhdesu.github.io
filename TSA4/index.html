@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row d-flex mt-5 mb-5">
+            <div class="col col-md-6"><h1 class="fs-1 text-light shadow bg-dark">Best of Pasig City</h1></div>
+            <div class="col col-md-2 ms-auto"><button class="close-btn btn bg-warning text-light px-4 py-2" style="border-radius: 20px;" onclick="closeRecipe()">Main Menu</button></div>
+        </div>
+        <div class="row" style="margin-top: 15%;">
+            <div class="card my-card col me-5" 
+            data-recipeimg="https://bitesbybianca.com/wp-content/uploads/2022/03/CECDE42B-99C3-48A7-83FB-04C1DB0CD58C-edited.jpg" 
+            data-recipetitle="Bear Macaroons" 
+            data-recipeaddress="31 B Palyokan West"
+            data-recipeprice="$$$" 
+            data-recipeinfo="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar sem et ligula pharetra laoreet. In posuere tempor porttitor. Nunc at nulla nibh. Pellentesque lobortis a mauris et lacinia. Donec lectus sem, blandit sit amet nisl non, placerat consequat massa. Phasellus placerat metus diam, nec efficitur velit varius id. Donec id quam venenatis, molestie nulla placerat, cursus diam. Duis eget leo in nisi cursus tempus ac nec diam. Fusce fringilla nisl eget pellentesque finibus. Sed iaculis dolor lacus, a placerat magna iaculis vitae. Praesent ac tincidunt mi. Praesent varius dui vitae turpis tincidunt, aliquet ornare ex eleifend. Duis sed aliquet magna. Donec risus ante, commodo vitae tempor vel, ultricies id nisl.
+
+            Etiam hendrerit egestas euismod. Nam convallis nisi at ultrices semper. Aliquam finibus lectus ac eros ultricies semper nec eget sapien. Integer id nisi arcu. Nulla facilisi. Sed vel ante posuere, ultrices leo sed, finibus ante. Mauris eu lectus vel nisl fringilla vehicula in vel sem. Ut at nisi in dui vulputate pharetra. Curabitur eget purus feugiat, condimentum diam non, iaculis ipsum. Morbi sed egestas metus. Sed vulputate tortor sit amet consectetur dictum. In porttitor facilisis cursus. Nam efficitur vestibulum neque vel egestas." 
+            onclick="showRecipe(this)">
+                <h5 class="card-title d-flex justify-content-center bg-warning text-dark">Bear Macaroons</h5>
+                <img src="https://bitesbybianca.com/wp-content/uploads/2022/03/CECDE42B-99C3-48A7-83FB-04C1DB0CD58C-edited.jpg" class="card-img-top" alt="Image" style="width: 200%;">
+                <div class="card-body">
+                    <div class="extra-info ">
+                        <hr class="my-3 mx-auto" style="width: 60%;">
+                        <div class="d-flex justify-content-center">
+                            <p>Try all our entrees!</p>
+                        </div> 
+                        <hr class="my-1 mx-auto" style="width: 60%;">
+                        <div class="d-flex justify-content-center">
+                            <i class="bi bi-play-circle"></i> More 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card my-card col me-5" 
+            data-recipeimg="https://www.thewickednoodle.com/wp-content/uploads/2019/12/korean-chicken-wings-3-of-3.jpg.webp" 
+            data-recipetitle="Buffalo Wings" 
+            data-recipeaddress="Blk 2 Lot 1, Nova Arc Subdivision"
+            data-recipeprice="$$$" 
+            data-recipeinfo="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar sem et ligula pharetra laoreet. In posuere tempor porttitor. Nunc at nulla nibh. Pellentesque lobortis a mauris et lacinia. Donec lectus sem, blandit sit amet nisl non, placerat consequat massa. Phasellus placerat metus diam, nec efficitur velit varius id. Donec id quam venenatis, molestie nulla placerat, cursus diam. Duis eget leo in nisi cursus tempus ac nec diam. Fusce fringilla nisl eget pellentesque finibus. Sed iaculis dolor lacus, a placerat magna iaculis vitae. Praesent ac tincidunt mi. Praesent varius dui vitae turpis tincidunt, aliquet ornare ex eleifend. Duis sed aliquet magna. Donec risus ante, commodo vitae tempor vel, ultricies id nisl.
+
+            Etiam hendrerit egestas euismod. Nam convallis nisi at ultrices semper. Aliquam finibus lectus ac eros ultricies semper nec eget sapien. Integer id nisi arcu. Nulla facilisi. Sed vel ante posuere, ultrices leo sed, finibus ante. Mauris eu lectus vel nisl fringilla vehicula in vel sem. Ut at nisi in dui vulputate pharetra. Curabitur eget purus feugiat, condimentum diam non, iaculis ipsum. Morbi sed egestas metus. Sed vulputate tortor sit amet consectetur dictum. In porttitor facilisis cursus. Nam efficitur vestibulum neque vel egestas." 
+            onclick="showRecipe(this)">
+                <h5 class="card-title d-flex justify-content-center bg-warning text-dark">Buffalo Wings</h5>
+                <img src="https://www.thewickednoodle.com/wp-content/uploads/2019/12/korean-chicken-wings-3-of-3.jpg.webp" class="card-img-top" alt="Image" style="width: 250%;">
+                <div class="card-body">
+                    <div class="extra-info ">
+                        <hr class="my-3 mx-auto" style="width: 60%;">
+                        <div class="d-flex justify-content-center">
+                            <p>Savory Food of all kinds!</p>
+                        </div> 
+                        <hr class="my-1 mx-auto" style="width: 60%;">
+                        <div class="d-flex justify-content-center">
+                            <i class="bi bi-play-circle"></i> More 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card my-card col me-5"
+            data-recipeimg="https://getmainelobster.com/cdn/shop/files/2048-4-tails-A.jpg?v=1733262296&width=1000" 
+            data-recipetitle="Steamed Lobster" 
+            data-recipeaddress="Blk 1 Lot 7, Bliss Subdivision"
+            data-recipeprice="$$$" 
+            data-recipeinfo="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar sem et ligula pharetra laoreet. In posuere tempor porttitor. Nunc at nulla nibh. Pellentesque lobortis a mauris et lacinia. Donec lectus sem, blandit sit amet nisl non, placerat consequat massa. Phasellus placerat metus diam, nec efficitur velit varius id. Donec id quam venenatis, molestie nulla placerat, cursus diam. Duis eget leo in nisi cursus tempus ac nec diam. Fusce fringilla nisl eget pellentesque finibus. Sed iaculis dolor lacus, a placerat magna iaculis vitae. Praesent ac tincidunt mi. Praesent varius dui vitae turpis tincidunt, aliquet ornare ex eleifend. Duis sed aliquet magna. Donec risus ante, commodo vitae tempor vel, ultricies id nisl.
+
+            Etiam hendrerit egestas euismod. Nam convallis nisi at ultrices semper. Aliquam finibus lectus ac eros ultricies semper nec eget sapien. Integer id nisi arcu. Nulla facilisi. Sed vel ante posuere, ultrices leo sed, finibus ante. Mauris eu lectus vel nisl fringilla vehicula in vel sem. Ut at nisi in dui vulputate pharetra. Curabitur eget purus feugiat, condimentum diam non, iaculis ipsum. Morbi sed egestas metus. Sed vulputate tortor sit amet consectetur dictum. In porttitor facilisis cursus. Nam efficitur vestibulum neque vel egestas." 
+            onclick="showRecipe(this)">
+                
+                <h5 class="card-title d-flex justify-content-center bg-warning text-dark">Steamed Lobster</h5>
+                <img src="https://getmainelobster.com/cdn/shop/files/2048-4-tails-A.jpg?v=1733262296&width=1000" class="card-img-top" alt="Image" style="width: 160%;">
+                <div class="card-body">
+                    <div class="extra-info ">
+                        <hr class="my-3 mx-auto" style="width: 60%;">
+                        <div class="d-flex justify-content-center">
+                            <p>Delicious treats waiting for you!</p>
+                        </div> 
+                        <hr class="my-1 mx-auto" style="width: 60%;">
+                        <div class="d-flex justify-content-center">
+                            <i class="bi bi-play-circle"></i> More 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card my-card col me-5"
+            data-recipeimg="https://bakerbynature.com/wp-content/uploads/2021/07/Soft-Batch-Chocolate-Chip-Cookies-1-1-of-1.jpg" 
+            data-recipetitle="Chocolate Chip Cookies" 
+            data-recipeprice="$$$" 
+            data-recipeaddress="378 Banana Ave, Kapasigan"
+            data-recipeinfo="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar sem et ligula pharetra laoreet. In posuere tempor porttitor. Nunc at nulla nibh. Pellentesque lobortis a mauris et lacinia. Donec lectus sem, blandit sit amet nisl non, placerat consequat massa. Phasellus placerat metus diam, nec efficitur velit varius id. Donec id quam venenatis, molestie nulla placerat, cursus diam. Duis eget leo in nisi cursus tempus ac nec diam. Fusce fringilla nisl eget pellentesque finibus. Sed iaculis dolor lacus, a placerat magna iaculis vitae. Praesent ac tincidunt mi. Praesent varius dui vitae turpis tincidunt, aliquet ornare ex eleifend. Duis sed aliquet magna. Donec risus ante, commodo vitae tempor vel, ultricies id nisl.
+
+            Etiam hendrerit egestas euismod. Nam convallis nisi at ultrices semper. Aliquam finibus lectus ac eros ultricies semper nec eget sapien. Integer id nisi arcu. Nulla facilisi. Sed vel ante posuere, ultrices leo sed, finibus ante. Mauris eu lectus vel nisl fringilla vehicula in vel sem. Ut at nisi in dui vulputate pharetra. Curabitur eget purus feugiat, condimentum diam non, iaculis ipsum. Morbi sed egestas metus. Sed vulputate tortor sit amet consectetur dictum. In porttitor facilisis cursus. Nam efficitur vestibulum neque vel egestas." 
+            onclick="showRecipe(this)">
+                <h5 class="card-title d-flex justify-content-center bg-warning text-dark">Chocolate Chip Cookies</h5>
+                <img src="https://bakerbynature.com/wp-content/uploads/2021/07/Soft-Batch-Chocolate-Chip-Cookies-1-1-of-1.jpg" class="card-img-top" alt="Image" style="width: 200%;">
+                <div class="card-body">
+                    <div class="extra-info ">
+                        <hr class="my-3 mx-auto" style="width: 60%;">
+                        <div class="d-flex justify-content-center">
+                            <p>Buy smart, eat smart now!</p>
+                        </div> 
+                        <hr class="my-1 mx-auto" style="width: 60%;">
+                        <div class="d-flex justify-content-center">
+                            <i class="bi bi-play-circle"></i> More 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <div id="recipe-view" class="recipe-panel mx-auto">
+        <div class="rotated-name bg-warning" id="recipe-name"></div>
+
+        <div class="row">
+            <div class="col">
+                <h2 class="ms-5" id="recipe-title"></h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col"><img id="recipe-img" alt="Recipe Image" class="ms-5" style="width: 70%; height: auto;"></div>
+            <div class="col col-md-7">
+                <div class="row fs-4 fw-bold">
+                    Location:
+                    <div class="col col-md-6"><p class="" id="recipe-address"></p></div>
+                    Price: 
+                    <div class="col"><p class="" id="recipe-price"></p></div>
+
+                </div>
+                <hr>
+                <div class="row"><p id="recipe-info"></p></div>
+            </div>
+        </div>
+            
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+        function showRecipe(card) {
+            const title = card.dataset.recipetitle;
+            const price = card.dataset.recipeprice;
+            const address = card.dataset.recipeaddress;
+            const img = card.dataset.recipeimg;
+            const info = card.dataset.recipeinfo;
+
+            document.getElementById("recipe-name").textContent = title;
+            document.getElementById("recipe-title").textContent = title;
+            document.getElementById("recipe-price").textContent = price;
+            document.getElementById("recipe-address").textContent = address;
+            document.getElementById("recipe-img").src = img;
+            document.getElementById("recipe-info").textContent = info;
+
+            // Show the panel with animation
+            const panel = document.getElementById("recipe-view");
+            panel.classList.add("active");
+        }
+
+        function closeRecipe() {
+            const panel = document.getElementById("recipe-view");
+            panel.classList.remove("active");
+        }
+    </script>
+</body>
+</html>
